@@ -1,20 +1,18 @@
-import bookmark from "../bookmarked.png";
+import bookmark from "../bookmark.png";
 
 
 function Artist() {
   return (
     <div className="artist card my-5">
-      <img src="https://wallpapercave.com/wp/wp4417868.jpg" className="card-img-top" alt="artist image" />
-      <div className="card-body">
-        <h5 className="card-title text-black-50">Card title</h5>
+      <img src="https://wallpapercave.com/wp/wp4417868.jpg" className="card-img-top artist-image" alt="artist image" />
+      <div className="card-body pb-4">
+        <h5 className="card-title">Card title</h5>
       </div>
-      <div className="card-body d-flex justify-content-between">
-        <a href="#" className="card-link mr-auto">
-          More Info
+      <div className="card-body d-flex pt-0 mb-9 justify-content-between">
+        <a href="#" className="card-link more-info"> 
+          more info -&gt;
         </a>
-        <a href="#" className="card-link ml-auto">
           <img className="bookmark-icon" src={bookmark} alt="boolmark icon" />
-        </a>
       </div>
     </div>
   );

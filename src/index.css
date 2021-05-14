@@ -29,6 +29,24 @@ code {
 }
 
 .artist .bookmark-icon {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
+  /* margin-right:20px;
+  margin-bottom:20px; */
+}
+.artist .bookmark-icon:hover {
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+}
+
+.artist {
+  color: white;
+  background:rgb(39, 74, 233);
+  border:0px;
+  border-radius:15px;
+}
+
+.artist .more-info{
+  color: inherit;
 }
