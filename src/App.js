@@ -1,12 +1,10 @@
 
-
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       it's app container
     </div>
   );
 }
 
 export default App;
-
