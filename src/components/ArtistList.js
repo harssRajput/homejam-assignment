@@ -21,19 +21,19 @@ class ArtistList extends React.Component {
           <h2 className="col-5 text-center">Upcoming Shows</h2>
           <div className="col-3 text-center offset-md-4">
             <nav aria-label="artist navigation">
-              <ul class="pagination">
-                <li class="page-item ">
+              <ul className="pagination">
+                <li className="page-item ">
                   <a
-                    class="page-link bg-dark text-white"
+                    className="page-link bg-dark text-white"
                     href="#"
                     aria-label="Previous"
                   >
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
-                <li class="page-item">
+                <li className="page-item">
                   <a
-                    class="page-link bg-dark text-white"
+                    className="page-link bg-dark text-white"
                     href="#"
                     aria-label="Next"
                   >
@@ -45,9 +45,9 @@ class ArtistList extends React.Component {
           </div>
         </div>
         <div className="row justify-content-evenly row-cols-1 row-cols-md-2 row-cols-lg-4">
-          {artists.map((artist) => {
+          {artists.map((artist, index) => {
             return (
-              <div className="col">
+              <div className="col" key={index}>
                 <Artist artist={artist} />
               </div>
             );

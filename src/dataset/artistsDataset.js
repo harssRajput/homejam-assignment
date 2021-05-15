@@ -8,6 +8,7 @@ export const artistsDataset = [
     image:
       "https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/8/2020_8$largeimg_1289309137.jpeg",
     moreDetail: "https://www.wikipedia.com",
+    id:1
   },
   {
     name: "Tanishk Bagchi",
@@ -18,6 +19,7 @@ export const artistsDataset = [
     image:
       "https://static.toiimg.com/thumb/msid-78601412,imgsize-261376,width-800,height-600,resizemode-75/78601412.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:2
   },
   {
     name: "Shreya Ghosal",
@@ -27,6 +29,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://static.toiimg.com/photo/59772131.cms",
     moreDetail: "https://www.wikipedia.com",
+    id:3
   },
   {
     name: "Jubin Nautiyal",
@@ -37,6 +40,7 @@ export const artistsDataset = [
     image:
       "https://pbs.twimg.com/profile_images/789829943072989185/7MrhCADz_400x400.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:4
   },
   {
     name: "Arijit Singh",
@@ -46,6 +50,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://i.cdn.newsbytesapp.com/images/l37220210424184951.png",
     moreDetail: "https://www.wikipedia.com",
+    id:5
   },
   {
     name: "Neha Kakkar",
@@ -55,6 +60,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://pbs.twimg.com/media/Ev9xxDNXAAQqh2h.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:6
   },
   {
     name: "Tulsi Kumar",
@@ -65,6 +71,7 @@ export const artistsDataset = [
     image:
       "https://i.pinimg.com/originals/d3/91/d4/d391d4e85533cf96af81d84fef7602de.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:7
   },
   {
     name: "Guru Randhawa",
@@ -74,6 +81,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://static.toiimg.com/photo/msid-80392791/80392791.jpg?520514",
     moreDetail: "https://www.wikipedia.com",
+    id:8
   },
   {
     name: "Jubin Nautiyal",
@@ -84,6 +92,7 @@ export const artistsDataset = [
     image:
       "https://pbs.twimg.com/profile_images/789829943072989185/7MrhCADz_400x400.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:9
   },
   {
     name: "Honey Singh",
@@ -93,6 +102,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://m.media-amazon.com/images/I/616gOUm4ypL._SS500_.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:10
   },
   {
     name: "A. R. Rahman",
@@ -103,6 +113,7 @@ export const artistsDataset = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/9/98/Nenje_Ezhu_at_Chennai_%28cropped%29.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:11
   },
   {
     name: "Jubin Nautiyal",
@@ -113,6 +124,7 @@ export const artistsDataset = [
     image:
       "https://pbs.twimg.com/profile_images/789829943072989185/7MrhCADz_400x400.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:12
   },
   {
     name: "Badshah",
@@ -123,6 +135,7 @@ export const artistsDataset = [
     image:
       "https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/8/2020_8$largeimg_1289309137.jpeg",
     moreDetail: "https://www.wikipedia.com",
+    id:13
   },
   {
     name: "Tanishk Bagchi",
@@ -133,6 +146,7 @@ export const artistsDataset = [
     image:
       "https://static.toiimg.com/thumb/msid-78601412,imgsize-261376,width-800,height-600,resizemode-75/78601412.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:14
   },
   {
     name: "Shreya Ghosal",
@@ -142,6 +156,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://static.toiimg.com/photo/59772131.cms",
     moreDetail: "https://www.wikipedia.com",
+    id:15
   },
   {
     name: "Jubin Nautiyal",
@@ -152,6 +167,7 @@ export const artistsDataset = [
     image:
       "https://pbs.twimg.com/profile_images/789829943072989185/7MrhCADz_400x400.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:16
   },
   {
     name: "Arijit Singh",
@@ -161,6 +177,7 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://i.cdn.newsbytesapp.com/images/l37220210424184951.png",
     moreDetail: "https://www.wikipedia.com",
+    id:17
   },
   {
     name: "Neha Kakkar",
@@ -170,5 +187,6 @@ export const artistsDataset = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit enim reprehenderit quo voluptatem ipsa. A est reprehenderit sequi explicabo id amet soluta aliquam, harum, distinctio tenetur vitae. Et, assumenda! Quod!",
     image: "https://pbs.twimg.com/media/Ev9xxDNXAAQqh2h.jpg",
     moreDetail: "https://www.wikipedia.com",
+    id:18
   },
 ];

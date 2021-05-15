@@ -8,12 +8,17 @@ class ReviewList extends React.Component {
     super();
 
     this.state = {
-      reviews: reviewsDataset,
-    };
+      reviews: [...reviewsDataset],
+      currPageNum: 1,
+    
+    }
+    // console.log("this is current page reviews list", currPageReviews);
   }
+
 
   render() {
       const {reviews} = this.state;
+    //   console.log("this is current page reviews list", currPageReviews);
         return (
             <div className="review-list  container">
             <div className="row header">
@@ -21,24 +26,24 @@ class ReviewList extends React.Component {
                 {/* {dfkjas;lf} */}
                 <div className="col-3 text-center offset-md-6">
                 <nav aria-label="review navigation">
-                    <ul class="pagination">
-                    <li class="page-item ">
-                        <a class="page-link bg-dark text-white" href="#" aria-label="Previous">
+                    <ul className="pagination">
+                    <li className="page-item ">
+                        <a className="page-link bg-dark text-white" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
-                    {/* <li class="page-item">
-                        <a class="page-link" href="#">
+                    {/* <li className="page-item">
+                        <a className="page-link" href="#">
                         1
                         </a>
                     </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
+                    <li className="page-item">
+                        <a className="page-link" href="#">
                         2
                         </a>
                     </li> */}
-                    <li class="page-item">
-                        <a class="page-link bg-dark text-white" href="#" aria-label="Next">
+                    <li className="page-item">
+                        <a className="page-link bg-dark text-white" href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
@@ -47,25 +52,13 @@ class ReviewList extends React.Component {
                 </div>
             </div>
             <div className="row justify-content-evenly row-cols-1 row-cols-md-2 row-cols-lg-4">
-            {reviews.map((review) => {
+            {reviews.map((review, index) => {
             return (
-              <div className="col">
+              <div className="col" key={index}>
                 <Review review={review} />
               </div>
             );
           })}
-                {/* <div className="col">
-                <Review />
-                </div>
-                <div className="col">
-                <Review />
-                </div>
-                <div className="col">
-                <Review />
-                </div>
-                <div className="col">
-                <Review />
-                </div> */}
             </div>
             </div>
         );
