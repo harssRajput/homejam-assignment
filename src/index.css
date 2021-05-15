@@ -47,6 +47,51 @@ code {
   border-radius:15px;
 }
 
+.artist .artist-image{
+  border-radius: 15px 15px 0 0;
+}
+
 .artist .more-info{
   color: inherit;
+}
+
+.review .user-image{
+  height:40px;
+  width:40px;
+  border-radius:50%;
+}
+.review .country-flag{
+  height:15px;
+  width:15px;
+}
+
+.review {
+  border-radius:15px;
+}
+
+.review .left-block{
+  padding-left: 30px;
+  padding-top:10px
+}
+.review .right-block{
+  padding-left: 30px;
+  padding-top:10px
+}
+
+.review .username{
+  font-size: 15px;
+  font-weight: normal;
+  color:rgb(192, 238, 238);
+  margin-left:25px;
+}
+
+.review .location{
+  font-size: 13px;
+  font-weight: normal;
+  color:rgb(165, 180, 180);
+  margin-left:10px
+}
+
+.review .review-text {
+  margin-left:10px;
 }

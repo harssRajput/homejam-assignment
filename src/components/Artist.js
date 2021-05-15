@@ -12,7 +12,7 @@ function Artist() {
         <a href="#" className="card-link more-info"> 
           more info -&gt;
         </a>
-          <img className="bookmark-icon" src={bookmark} alt="boolmark icon" />
+          <img className="bookmark-icon" src={bookmark} alt="bookmark icon" />
       </div>
     </div>
   );
