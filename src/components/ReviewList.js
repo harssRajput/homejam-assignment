@@ -1,8 +1,9 @@
+import Review from './Review'
 
 function ReviewList() {
     return (
         <div className="review-list">
-            Review list
+            <Review/>
         </div>
     );
 }
