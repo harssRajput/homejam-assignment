@@ -55,6 +55,10 @@ code {
   color: inherit;
 }
 
+.artist-list .page-link{
+  border: 0;
+}
+
 .review .user-image{
   height:40px;
   width:40px;
@@ -95,3 +99,10 @@ code {
 .review .review-text {
   margin-left:10px;
 }
+
+.review-list .page-link{
+  border: 0;
+}
+/* .review-list .header{
+  font-size: 25px;
+} */
