@@ -106,6 +106,19 @@ code {
 .review-list .page-link {
   border: 0;
 }
-/* .review-list .header{
-  font-size: 25px;
-} */
+.review-list .prev-icon,
+.review-list .next-icon {
+  height: 30px;
+  width: 30px;
+}
+.review-list .prev-icon:hover,
+.review-list .next-icon:hover {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.review-list .disabled:hover,
+.review-list .disabled:hover {
+  cursor: unset;
+}
