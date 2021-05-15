@@ -22,7 +22,7 @@ code {
 
 .indicator {
   border-radius: 50%;
-  border: 1px solid rgb(158, 213, 223);
+  border: 1px solid rgb(0, 250, 250);
   height: 120px;
   width: 120px;
   /* padding: auto; */
@@ -42,7 +42,7 @@ code {
 
 .artist {
   color: white;
-  background: rgb(39, 74, 233);
+  background: rgba(77, 78, 80, 0.938);
   border: 0px;
   border-radius: 15px;
 }
@@ -116,6 +116,8 @@ code {
   height: 30px;
   width: 30px;
   cursor: pointer;
+  border: 1px solid rgb(158, 213, 223);
+  /* border-radius: 30px/40px; */
 }
 
 .review-list .disabled:hover,
@@ -127,4 +129,18 @@ code {
   cursor: pointer;
   border: 1px solid rgb(158, 213, 223);
   border-radius: 30px/40px;
+}
+
+.artist .more-info {
+  font-weight: lighter;
+}
+
+.artist .more-info:hover {
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.artist-detail-page .go-back:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(69, 238, 46);
 }

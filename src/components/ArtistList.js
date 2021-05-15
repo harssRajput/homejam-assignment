@@ -24,6 +24,7 @@ class ArtistList extends React.Component {
   render() {
     //   console.log(artistsDataset);
     const { artists, showMoreArtist } = this.state;
+    const {handleDetailPage} = this.props;
     return (
       <div className="artist-list container">
         <div className="row header">
@@ -43,7 +44,7 @@ class ArtistList extends React.Component {
             .map((artist, index) => {
               return (
                 <div className="col" key={index}>
-                  <Artist artist={artist} />
+                  <Artist artist={artist} handleDetailPage={handleDetailPage} />
                 </div>
               );
             })}
