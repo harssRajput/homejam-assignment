@@ -42,65 +42,68 @@ code {
 
 .artist {
   color: white;
-  background:rgb(39, 74, 233);
-  border:0px;
-  border-radius:15px;
+  background: rgb(39, 74, 233);
+  border: 0px;
+  border-radius: 15px;
 }
 
-.artist .artist-image{
+.artist .artist-image {
   border-radius: 15px 15px 0 0;
+  max-width: 100%;
+  height: 250px;
+  background-size: cover;
 }
 
-.artist .more-info{
+.artist .more-info {
   color: inherit;
 }
 
-.artist-list .page-link{
+.artist-list .page-link {
   border: 0;
 }
 
-.review .user-image{
-  height:40px;
-  width:40px;
-  border-radius:50%;
+.review .user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-.review .country-flag{
-  height:15px;
-  width:15px;
+.review .country-flag {
+  height: 15px;
+  width: 15px;
 }
 
 .review {
-  border-radius:15px;
+  border-radius: 15px;
 }
 
-.review .left-block{
+.review .left-block {
   padding-left: 30px;
-  padding-top:10px
+  padding-top: 10px;
 }
-.review .right-block{
+.review .right-block {
   padding-left: 30px;
-  padding-top:10px
+  padding-top: 10px;
 }
 
-.review .username{
+.review .username {
   font-size: 15px;
   font-weight: normal;
-  color:rgb(192, 238, 238);
-  margin-left:25px;
+  color: rgb(192, 238, 238);
+  margin-left: 25px;
 }
 
-.review .location{
+.review .location {
   font-size: 13px;
   font-weight: normal;
-  color:rgb(165, 180, 180);
-  margin-left:10px
+  color: rgb(165, 180, 180);
+  margin-left: 10px;
 }
 
 .review .review-text {
-  margin-left:10px;
+  margin-left: 10px;
 }
 
-.review-list .page-link{
+.review-list .page-link {
   border: 0;
 }
 /* .review-list .header{
