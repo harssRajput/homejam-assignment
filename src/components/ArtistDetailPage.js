@@ -1,16 +1,32 @@
 function ArtistDetailPage(props) {
   const { handleDetailPage, artist } = props;
   return (
-    <div className="artist-detail-page container">
-      <div className="row header">
-        <h2 className="col-5 text-center">{artist.name}</h2>
-        <div className="col-3 text-center offset-md-4">
-          <p className="go-back" onClick={handleDetailPage}>
-            Go Back
-          </p>
+    <div className="artist-page container">
+      <div className="row">
+        <div className="col-10">
+          <p className="go-back text-end">Go Back top one handker</p>
         </div>
       </div>
-      it's a artist detail page
+      <div className="row">
+        <div className="col-6">
+          <img className="artist-image" src="" alt="artist image" />
+        </div>
+        <div className="col-6">
+          <p className="artist-tag">artist tag goes here</p>
+          <p className="artist-name">artist name here</p>
+          <p className="artist-dob">artist DOB here</p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-10">
+          <p className="artist-about">artist about goes here</p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-10">
+          <p className="go-back text-center">Go Back bottom one handker</p>
+        </div>
+      </div>
     </div>
   );
 }

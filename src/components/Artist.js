@@ -28,7 +28,8 @@ class Artist extends React.Component {
           alt="artist image"
         />
         <div className="card-body pb-4">
-          <h5 className="card-title">{artist.name}</h5>
+          <p className="card-title">{artist.tag}</p>
+          <h3 className="card-title">{artist.name}</h3>
         </div>
         <div className="card-body d-flex pt-0 mb-9 justify-content-between">
           <span className="more-info" onClick={()=>{handleDetailPage(artist)}}>more info -&gt;</span>
