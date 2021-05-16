@@ -4,8 +4,9 @@ function Description() {
       <h2>By Harsh Rajput</h2>
       <p>
         It is fully featured and fully responsive website.<br/>
-        Every element is sensable and alive.<br/>
-        Check it out...
+        Responsive to all screen sizes<br/>
+        Try to keep every element sensible and alive.<br/>
+        please provide feedback. it's really appreciated...
       </p>
     </div>
   );
