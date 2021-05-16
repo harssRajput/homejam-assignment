@@ -4,27 +4,41 @@ function ArtistDetailPage(props) {
     <div className="artist-page container">
       <div className="row">
         <div className="col-10">
-          <p className="go-back text-end">Go Back top one handker</p>
+          <p
+            onClick={() => {
+              handleDetailPage({});
+            }}
+            className="go-back text-end"
+          >
+            Go Back top
+          </p>
         </div>
       </div>
       <div className="row">
-        <div className="col-6">
-          <img className="artist-image" src="" alt="artist image" />
+        <div className="col-5">
+          <img className="artist-image" src={artist.image} alt="artist image" />
         </div>
-        <div className="col-6">
-          <p className="artist-tag">artist tag goes here</p>
-          <p className="artist-name">artist name here</p>
-          <p className="artist-dob">artist DOB here</p>
+        <div className="col-6 artist-info">
+          <p className="artist-tag">{artist.tag}</p>
+          <p className="artist-name">{artist.name}</p>
+          <p className="artist-dob">{artist.born}</p>
         </div>
       </div>
       <div className="row">
         <div className="col-10">
-          <p className="artist-about">artist about goes here</p>
+          <p className="artist-about">{artist.about}</p>
         </div>
       </div>
       <div className="row">
         <div className="col-10">
-          <p className="go-back text-center">Go Back bottom one handker</p>
+          <p
+            onClick={() => {
+              handleDetailPage({});
+            }}
+            className="go-back text-center"
+          >
+            Go Back bottom
+          </p>
         </div>
       </div>
     </div>

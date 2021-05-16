@@ -140,10 +140,17 @@ code {
   font-weight: normal;
 }
 
-.artist-detail-page .go-back:hover {
+.artist-page .go-back:hover {
   cursor: pointer;
   border-bottom: 2px solid rgb(69, 238, 46);
 }
 
+.artist-page .artist-image{
+  max-width:100%;
+}
+
+.artist-page .artist-info{
+  font-size: 18px;
+}
 
 

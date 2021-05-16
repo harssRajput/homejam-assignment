@@ -28,8 +28,8 @@ class ArtistList extends React.Component {
     return (
       <div className="artist-list container">
         <div className="row header">
-          <h2 className="col-5 text-center">Upcoming Shows</h2>
-          <div className="col-3 text-center offset-md-4">
+          <h2 className="col-7 text-center">Upcoming Shows</h2>
+          <div className="col-3 text-center offset-md-2">
             <p
               className="show-more-artist"
               onClick={this.handleShowMoreFeature}
