@@ -29,7 +29,6 @@ class Main extends React.Component {
     return (
       <div className="main">
         <Description />
-        {/* <Indicators /> */}
         {showDetailPage ? (
           <ArtistDetailPage
             handleDetailPage={this.handleDetailPage}
@@ -42,8 +41,6 @@ class Main extends React.Component {
             <ReviewList />
           </div>
         )}
-        {/* <ArtistList />
-        <ReviewList /> */}
       </div>
     );
   }

@@ -7,7 +7,7 @@ function Review(props) {
           <img
             src={review.userImage}
             className="user-image"
-            alt="review user image"
+            alt="review user icon"
           />
         </div>
         <div className="col-9 right-block">

@@ -16,7 +16,7 @@ function ArtistDetailPage(props) {
       </div>
       <div className="row">
         <div className="col-5">
-          <img className="artist-image" src={artist.image} alt="artist image" />
+          <img className="artist-image" src={artist.image} alt="artist icon" />
         </div>
         <div className="col-6 artist-info">
           <p className="artist-tag">{artist.tag}</p>

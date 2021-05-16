@@ -22,14 +22,13 @@ class ArtistList extends React.Component {
   };
 
   render() {
-    //   console.log(artistsDataset);
     const { artists, showMoreArtist } = this.state;
     const {handleDetailPage} = this.props;
     return (
       <div className="artist-list container">
         <div className="row header">
           <h1 className="col-7 text-center fs-3"><span>Upcomi</span>ng Shows</h1>
-          <div className="col-3 text-center offset-md-2">
+          <div className="col-3 text-center d-flex align-items-center offset-md-2">
             <p
               className="show-more-artist"
               onClick={this.handleShowMoreFeature}

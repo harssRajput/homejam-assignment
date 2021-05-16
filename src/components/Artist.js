@@ -11,7 +11,6 @@ class Artist extends React.Component {
   }
 
   handleBookmark = () => {
-    // console.log("inside bookmark handler");
     this.setState({
       isBookmark: !this.state.isBookmark,
     });
@@ -25,7 +24,7 @@ class Artist extends React.Component {
         <img
           src={artist.image}
           className="card-img-top artist-image"
-          alt="artist image"
+          alt="artist icon"
         />
         <div className="card-body pb-4">
           <p className="card-title">{artist.tag}</p>

@@ -1,8 +1,6 @@
 import React from "react";
 
 import Review from "./Review";
-import prevIcon from "../icons/bookmarked.png";
-import nextIcon from "../icons/bookmarked.png";
 import { reviewsDataset } from "../dataset/reviewsDataset";
 
 class ReviewList extends React.Component {
@@ -32,7 +30,6 @@ class ReviewList extends React.Component {
   handlePrevPage = () => {
     if (this.state.currPageNum === 1) return;
 
-    // this.state.currPageNum -= 1;
     this.setCurrPageReviews(false);
   };
 
@@ -40,20 +37,18 @@ class ReviewList extends React.Component {
     const { reviews, currPageNum } = this.state;
     if (currPageNum === Math.ceil(reviews.length / 4)) return;
 
-    // currPageNum+=1;
     this.setCurrPageReviews(true);
   };
 
   render() {
     const { reviews, currPageNum, currPageReviews } = this.state;
-    console.log("inside render function", "currPageNum is", currPageNum);
-    console.log("currPageReviews is", currPageReviews);
-    console.log("current page reviewsPart are", reviews.slice(4, 8));
 
     return (
       <div className="review-list container">
         <div className="row header">
-          <h2 className="col-3 text-center"><span>Revie</span>ws</h2>
+          <h2 className="col-3 text-center">
+            <span>Revie</span>ws
+          </h2>
           <div className="col-3 text-center offset-md-6">
             <nav aria-label="review navigation">
               <span className="text-muted mx-1 fs-5">{currPageNum}</span>
@@ -62,26 +57,20 @@ class ReviewList extends React.Component {
                 {Math.ceil(reviews.length / 4)}
               </span>
               <button
-                // type="button"
                 onClick={this.handlePrevPage}
                 className={`prev-icon mx-2 btn btn-sm btn-outline-secondary ${
                   currPageNum === 1 ? "disabled" : ""
                 }`}
-                // src={prevIcon}
-                // alt="previous review navigation"
               >
                 &#8592;
               </button>
               <button
-                // type="button"
                 onClick={this.handleNextPage}
                 className={`next-icon mx-2 btn btn-sm btn-outline-secondary ${
                   currPageNum === Math.ceil(reviews.length / 4)
                     ? "disabled"
                     : ""
                 }`}
-                // src={nextIcon}
-                // alt="next review navigation"
               >
                 &#8594;
               </button>
