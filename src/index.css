@@ -66,7 +66,7 @@ body {
 .artist-list h1 {
   line-height: 80px;
   letter-spacing: 1px;
-  color: rgb(185, 221, 230);
+  color: rgb(200, 243, 98);
 }
 .artist-list h1 span {
   border-bottom: 2px solid aqua;
@@ -204,7 +204,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: rgb(195, 231, 231);
+  color: white;
   margin-left: 20px;
   line-height: 25px;
   letter-spacing: 1.5px;
