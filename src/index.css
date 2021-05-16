@@ -20,24 +20,25 @@ body {
   border: 1px solid rgb(0, 250, 250);
   height: 120px;
   width: 120px;
-  margin-bottom: 50px;
-  box-shadow: 0 0 20px rgb(220, 136, 231), inset 0 0 10px rgb(213, 87, 230);
+  box-shadow: 0 0 5px rgb(220, 136, 231), inset 0 0 10px rgb(134, 236, 228);
 }
+/* rgb(213, 87, 230); */
 .indicator .icon {
   height: 25px;
   width: 25px;
   margin-right: 5px;
 }
-
+.artist{
+  box-shadow: 10px -10px 2px rgb(183, 41, 202), inset 0 0 20px rgb(182, 184, 187);
+}
 .artist .bookmark-icon {
   height: 20px;
   width: 20px;
-  /* margin-right:20px;
-  margin-bottom:20px; */
+  transition: all 200ms ease;
 }
 .artist .bookmark-icon:hover {
-  height: 23px;
-  width: 23px;
+  height: 24px;
+  width: 24px;
   cursor: pointer;
 }
 
@@ -62,6 +63,13 @@ body {
 .artist-list .page-link {
   border: 0;
 }
+.artist-list h1 {
+  line-height: 80px;
+  color: rgb(92, 235, 48);
+}
+.artist-list h1 span {
+  border-bottom: 2px solid aqua;
+}
 
 .review .user-image {
   height: 40px;
@@ -75,6 +83,8 @@ body {
 
 .review {
   border-radius: 15px;
+  box-shadow:0px -10px 2px rgb(72, 221, 13), inset 0 0 20px rgb(146, 148, 151);
+
 }
 
 .review .left-block {
@@ -121,11 +131,18 @@ body {
 .review-list .disabled:hover {
   cursor: unset;
 }
+.review-list h2 span {
+  border-bottom: 2px solid aqua;
+}
 
+.artist-list .show-more-artist{
+  transition: all 200ms ease;
+  border-radius: 30px/40px;
+}
 .artist-list .show-more-artist:hover {
   cursor: pointer;
-  border: 1px solid rgb(158, 213, 223);
   border-radius: 30px/40px;
+  border: 1px solid rgb(158, 213, 223);
 }
 
 .artist .more-info {

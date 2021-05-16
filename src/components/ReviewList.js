@@ -23,7 +23,6 @@ class ReviewList extends React.Component {
     const endIndex = Math.min(4 * (currPageNum + changeBy), reviews.length);
     const startIndex = 4 * (currPageNum + changeBy - 1);
 
-
     this.setState({
       currPageReviews: reviews.slice(startIndex, endIndex),
       currPageNum: currPageNum + changeBy,
@@ -31,7 +30,6 @@ class ReviewList extends React.Component {
   };
 
   handlePrevPage = () => {
-
     if (this.state.currPageNum === 1) return;
 
     // this.state.currPageNum -= 1;
@@ -55,7 +53,7 @@ class ReviewList extends React.Component {
     return (
       <div className="review-list container">
         <div className="row header">
-          <h2 className="col-3 text-center">Reviews</h2>
+          <h2 className="col-3 text-center"><span>Revie</span>ws</h2>
           <div className="col-3 text-center offset-md-6">
             <nav aria-label="review navigation">
               <span className="text-muted mx-1 fs-5">{currPageNum}</span>
@@ -63,22 +61,30 @@ class ReviewList extends React.Component {
               <span className="text-muted mx-1 fs-5">
                 {Math.ceil(reviews.length / 4)}
               </span>
-              <span
+              <button
+                // type="button"
                 onClick={this.handlePrevPage}
-                className={`prev-icon mx-2 ${currPageNum === 1 ? "disabled" : ""}`}
+                className={`prev-icon mx-2 btn btn-sm btn-outline-secondary ${
+                  currPageNum === 1 ? "disabled" : ""
+                }`}
                 // src={prevIcon}
                 // alt="previous review navigation"
-              >&#8592;</span>
-              <span
+              >
+                &#8592;
+              </button>
+              <button
+                // type="button"
                 onClick={this.handleNextPage}
-                className={`next-icon mx-2 ${
+                className={`next-icon mx-2 btn btn-sm btn-outline-secondary ${
                   currPageNum === Math.ceil(reviews.length / 4)
                     ? "disabled"
                     : ""
                 }`}
                 // src={nextIcon}
                 // alt="next review navigation"
-              >&#8594;</span>
+              >
+                &#8594;
+              </button>
             </nav>
           </div>
         </div>
