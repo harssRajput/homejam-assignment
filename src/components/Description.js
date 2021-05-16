@@ -5,7 +5,7 @@ function Description() {
       <p>
         It is fully featured and fully responsive website.<br/>
         Every element is sensable and alive.<br/>
-        Check it out...
+        please provide feedback. it's really appreciated
       </p>
     </div>
   );
