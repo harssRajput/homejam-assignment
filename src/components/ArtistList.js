@@ -28,7 +28,7 @@ class ArtistList extends React.Component {
     return (
       <div className="artist-list container">
         <div className="row header">
-          <h2 className="col-7 text-center">Upcoming Shows</h2>
+          <h1 className="col-7 text-center">Upcoming Shows</h1>
           <div className="col-3 text-center offset-md-2">
             <p
               className="show-more-artist"

@@ -1,10 +1,11 @@
 function Description() {
   return (
-    <div className="description">
-      <h1>Cari Cari</h1>
+    <div className="description mx-2 mt-4 mb-2">
+      <h2>By Harsh Rajput</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet nobis
-        explicabo distinctio totam rem amet est inventore repudiandae ad rerum
+        It is fully featured and fully responsive website.<br/>
+        Every element is sensable and alive.<br/>
+        Check it out...
       </p>
     </div>
   );
