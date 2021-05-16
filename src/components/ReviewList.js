@@ -1,10 +1,9 @@
 import React from "react";
 
 import Review from "./Review";
-import prevIcon from "../bookmarked.png";
-import nextIcon from "../bookmarked.png";
+import prevIcon from "../icons/bookmarked.png";
+import nextIcon from "../icons/bookmarked.png";
 import { reviewsDataset } from "../dataset/reviewsDataset";
-import { artistsDataset } from "../dataset/artistsDataset";
 
 class ReviewList extends React.Component {
   constructor() {
@@ -24,7 +23,6 @@ class ReviewList extends React.Component {
     const endIndex = Math.min(4 * (currPageNum + changeBy), reviews.length);
     const startIndex = 4 * (currPageNum + changeBy - 1);
 
-    console.log(currPageReviews.length, "it is length of an array");
 
     this.setState({
       currPageReviews: reviews.slice(startIndex, endIndex),
@@ -33,17 +31,14 @@ class ReviewList extends React.Component {
   };
 
   handlePrevPage = () => {
-    console.log("inside handel prev page");
 
     if (this.state.currPageNum === 1) return;
-    console.log("inside handel prev page");
 
     // this.state.currPageNum -= 1;
     this.setCurrPageReviews(false);
   };
 
   handleNextPage = () => {
-    console.log("inside handel next page");
     const { reviews, currPageNum } = this.state;
     if (currPageNum === Math.ceil(reviews.length / 4)) return;
 
@@ -68,22 +63,22 @@ class ReviewList extends React.Component {
               <span className="text-muted mx-1 fs-5">
                 {Math.ceil(reviews.length / 4)}
               </span>
-              <img
+              <span
                 onClick={this.handlePrevPage}
-                className={`prev-icon ${currPageNum === 1 ? "disabled" : ""}`}
-                src={prevIcon}
-                alt="previous review navigation"
-              />
-              <img
+                className={`prev-icon mx-2 ${currPageNum === 1 ? "disabled" : ""}`}
+                // src={prevIcon}
+                // alt="previous review navigation"
+              >&#8592;</span>
+              <span
                 onClick={this.handleNextPage}
-                className={`next-icon ${
+                className={`next-icon mx-2 ${
                   currPageNum === Math.ceil(reviews.length / 4)
                     ? "disabled"
                     : ""
                 }`}
-                src={nextIcon}
-                alt="next review navigation"
-              />
+                // src={nextIcon}
+                // alt="next review navigation"
+              >&#8594;</span>
             </nav>
           </div>
         </div>

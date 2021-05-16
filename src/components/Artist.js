@@ -1,6 +1,6 @@
 import React from "react";
-import bookmark from "../bookmark.png";
-import bookmarked from "../bookmarked.png";
+import bookmark from "../icons/bookmark.png";
+import bookmarked from "../icons/bookmarked.png";
 
 class Artist extends React.Component {
   constructor() {
