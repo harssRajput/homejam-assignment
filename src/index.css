@@ -153,4 +153,11 @@ code {
   font-size: 18px;
 }
 
+/* for coloring navbar in medium and less screens */
+/* @media (max-width:767px) {
+  .navbar {
+    background-color:rgb(47, 13, 139);
+  }
+} */
+
 
