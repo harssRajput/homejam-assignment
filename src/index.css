@@ -145,19 +145,31 @@ code {
   border-bottom: 2px solid rgb(69, 238, 46);
 }
 
-.artist-page .artist-image{
-  max-width:100%;
+.artist-page .artist-image {
+  max-width: 100%;
 }
 
-.artist-page .artist-info{
+.artist-page .artist-info {
   font-size: 18px;
 }
 
+.navbar {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar .active {
+  border-bottom: 1.5px solid rgb(52, 185, 185);
+}
+
+.navbar .brand-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
 /* for coloring navbar in medium and less screens */
 /* @media (max-width:767px) {
   .navbar {
     background-color:rgb(47, 13, 139);
   }
 } */
-
-
