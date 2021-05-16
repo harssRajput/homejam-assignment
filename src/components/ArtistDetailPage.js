@@ -4,14 +4,14 @@ function ArtistDetailPage(props) {
     <div className="artist-page container">
       <div className="row">
         <div className="col-10">
-          <p
+          <button
             onClick={() => {
               handleDetailPage({});
             }}
-            className="go-back text-end"
+            className="go-back text-end btn btn-dark"
           >
-            Go Back top
-          </p>
+            Go Back
+          </button>
         </div>
       </div>
       <div className="row">
@@ -31,14 +31,14 @@ function ArtistDetailPage(props) {
       </div>
       <div className="row">
         <div className="col-10">
-          <p
+          <button
             onClick={() => {
               handleDetailPage({});
             }}
-            className="go-back text-center"
+            className="go-back btn btn-dark text-center"
           >
-            Go Back bottom
-          </p>
+            Go Back
+          </button>
         </div>
       </div>
     </div>
