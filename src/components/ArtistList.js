@@ -14,7 +14,6 @@ class ArtistList extends React.Component {
   }
 
   handleShowMoreFeature = () => {
-    console.log("inside show more feature handler");
 
     this.setState({
       showMoreArtist: !this.state.showMoreArtist,
@@ -25,7 +24,7 @@ class ArtistList extends React.Component {
     const { artists, showMoreArtist } = this.state;
     const {handleDetailPage} = this.props;
     return (
-      <div className="artist-list container">
+      <article className="artist-list container">
         <div className="row header">
           <h1 className="col-7 text-center fs-3"><span>Upcomi</span>ng Shows</h1>
           <div className="col-3 text-center d-flex align-items-center offset-md-2">
@@ -48,7 +47,7 @@ class ArtistList extends React.Component {
               );
             })}
         </div>
-      </div>
+      </article>
     );
   }
 }

@@ -45,7 +45,7 @@ class ReviewList extends React.Component {
     // const { reviews, currPageNum, currPageReviews } = this.state;
 
     return (
-      <div className="review-list container">
+      <article className="review-list container">
         <div className="row header">
           <h2 className="col-3 text-center">
             <span>Revie</span>ws
@@ -89,7 +89,7 @@ class ReviewList extends React.Component {
             );
           })}
         </div>
-      </div>
+      </article>
     );
   }
 }

@@ -1,7 +1,7 @@
 function Review(props) {
   const { review } = props;
   return (
-    <div className="review my-4 bg-dark container py-2">
+    <article className="review my-4 bg-dark container py-2">
       <div className="row">
         <div className="col-1 left-block">
           <img
@@ -23,7 +23,7 @@ function Review(props) {
       <div className="col mt-3">
         <p className="review-text fs-7 text-monospace">{review.reviewText}</p>
       </div>
-    </div>
+    </article>
   );
 }
 

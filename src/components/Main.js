@@ -16,8 +16,6 @@ class Main extends React.Component {
   }
 
   handleDetailPage = (artist) => {
-    console.log("inside detail apge");
-
     this.setState({
       showDetailPage: !this.state.showDetailPage,
       artist: artist,
@@ -27,7 +25,7 @@ class Main extends React.Component {
   render() {
     const { showDetailPage, artist } = this.state;
     return (
-      <div className="main">
+      <main className="main">
         <Description />
         {showDetailPage ? (
           <ArtistDetailPage
@@ -41,7 +39,7 @@ class Main extends React.Component {
             <ReviewList />
           </div>
         )}
-      </div>
+      </main>
     );
   }
 }
