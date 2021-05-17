@@ -47,6 +47,24 @@ body {
   background: rgba(77, 78, 80, 0.938);
   border: 0px;
   border-radius: 15px;
+  /* height: ; */
+  /* width: 30%; */
+  max-width: 250px;
+  /* padding: 0px; */
+  margin:25px;
+}
+
+
+.artist-list .hor-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+  -webkit-overflow-scrolling: touch;
+}
+
+.artist-list .hor-scroll .artist-card {
+  flex: 0 0 auto;
 }
 
 .artist .artist-image {

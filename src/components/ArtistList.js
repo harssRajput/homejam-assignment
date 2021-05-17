@@ -37,12 +37,12 @@ class ArtistList extends React.Component {
             </p>
           </div>
         </div>
-        <div className="row justify-content-evenly row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div className="hor-scroll">
           {artists
             .slice(0, showMoreArtist ? artists.length : 3)
             .map((artist, index) => {
               return (
-                <div className="col" key={index}>
+                <div className="artist-card" key={index}>
                   <Artist artist={artist} handleDetailPage={handleDetailPage} />
                 </div>
               );

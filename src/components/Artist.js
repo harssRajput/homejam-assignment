@@ -20,7 +20,7 @@ class Artist extends React.Component {
     const { artist, handleDetailPage } = this.props;
     const { isBookmark } = this.state;
     return (
-      <div className="artist card my-5">
+      <div className="artist card my-4">
         <img
           src={artist.image}
           className="card-img-top artist-image"
