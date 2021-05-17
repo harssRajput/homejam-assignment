@@ -26,20 +26,20 @@ body {
   height: 25px;
   width: 25px;
   /* margin-right: 5px; */
-  margin:38%;
+  margin: 38%;
 }
- .hor-scroll {
+.hor-scroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   justify-content: end;
   -webkit-overflow-scrolling: touch;
 }
-.hor-scroll::-webkit-scrollbar{
-  display:none;
+.hor-scroll::-webkit-scrollbar {
+  display: none;
 }
- .hor-scroll .style-card {
-  flex: 0 0 auto;
+.hor-scroll .style-card {
+  flex: 1 0 auto;
   margin: 20px;
 }
 .artist {
@@ -66,7 +66,7 @@ body {
   /* width: 30%; */
   width: 250px;
   /* padding: 0px; */
-  margin:25px;
+  margin: 25px;
   /* margin-left: 0px; */
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .artist-list .hor-scroll .artist-card {
-  flex: 0 0 auto;
+  flex: 1 0 auto;
 }
 
 .artist .artist-image {
@@ -96,11 +96,13 @@ body {
 .artist-list .page-link {
   border: 0;
 }
+
 .artist-list h1 {
   line-height: 80px;
   letter-spacing: 1px;
   color: rgb(200, 243, 98);
 }
+
 .artist-list h1 span {
   border-bottom: 2px solid aqua;
 }
@@ -116,6 +118,9 @@ body {
 }
 
 .review {
+  width: 250px;
+  /* padding: 0px; */
+  margin: 25px;
   border-radius: 15px;
   box-shadow: 0px -10px 2px rgb(72, 221, 13), inset 0 0 20px rgb(146, 148, 151);
 }
@@ -164,12 +169,27 @@ body {
 .review-list .disabled:hover {
   cursor: unset;
 }
+
 .review-list h2 span {
   border-bottom: 2px solid aqua;
 }
+
 .review-list h2 {
   letter-spacing: 1.5px;
 }
+
+.review-list .hor-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: end;
+  -webkit-overflow-scrolling: touch;
+}
+
+.review-list .hor-scroll .review-card {
+  flex: 0 0 auto;
+}
+
 .artist-page button {
   font-size: 20px;
   font-weight: bold;

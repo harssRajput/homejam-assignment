@@ -9,39 +9,40 @@ class ReviewList extends React.Component {
 
     this.state = {
       reviews: [...reviewsDataset],
-      currPageNum: 1,
-      currPageReviews: reviewsDataset.slice(0, 4),
+      // currPageNum: 1,
+      // currPageReviews: reviewsDataset.slice(0, 4),
     };
   }
+  //these all functions to support handling prev and next button functionality
+  // setCurrPageReviews = (isNextPageRequest) => {
+  //   const { reviews, currPageNum, currPageReviews } = this.state;
+  //   const changeBy = isNextPageRequest ? 1 : -1;
 
-  setCurrPageReviews = (isNextPageRequest) => {
-    const { reviews, currPageNum, currPageReviews } = this.state;
-    const changeBy = isNextPageRequest ? 1 : -1;
+  //   const endIndex = Math.min(4 * (currPageNum + changeBy), reviews.length);
+  //   const startIndex = 4 * (currPageNum + changeBy - 1);
 
-    const endIndex = Math.min(4 * (currPageNum + changeBy), reviews.length);
-    const startIndex = 4 * (currPageNum + changeBy - 1);
+  //   this.setState({
+  //     currPageReviews: reviews.slice(startIndex, endIndex),
+  //     currPageNum: currPageNum + changeBy,
+  //   });
+  // };
 
-    this.setState({
-      currPageReviews: reviews.slice(startIndex, endIndex),
-      currPageNum: currPageNum + changeBy,
-    });
-  };
+  // handlePrevPage = () => {
+  //   if (this.state.currPageNum === 1) return;
 
-  handlePrevPage = () => {
-    if (this.state.currPageNum === 1) return;
+  //   this.setCurrPageReviews(false);
+  // };
 
-    this.setCurrPageReviews(false);
-  };
+  // handleNextPage = () => {
+  //   const { reviews, currPageNum } = this.state;
+  //   if (currPageNum === Math.ceil(reviews.length / 4)) return;
 
-  handleNextPage = () => {
-    const { reviews, currPageNum } = this.state;
-    if (currPageNum === Math.ceil(reviews.length / 4)) return;
-
-    this.setCurrPageReviews(true);
-  };
+  //   this.setCurrPageReviews(true);
+  // };
 
   render() {
-    const { reviews, currPageNum, currPageReviews } = this.state;
+    const { reviews } = this.state;
+    // const { reviews, currPageNum, currPageReviews } = this.state;
 
     return (
       <div className="review-list container">
@@ -50,7 +51,8 @@ class ReviewList extends React.Component {
             <span>Revie</span>ws
           </h2>
           <div className="col-3 text-center offset-md-6">
-            <nav aria-label="review navigation">
+            {/* it is a (complementary of scrolling) feature of navigation buttons as prev and next review page */}
+            {/* <nav aria-label="review navigation">
               <span className="text-muted mx-1 fs-5">{currPageNum}</span>
               <span className=" fs-5">/</span>
               <span className="text-muted mx-1 fs-5">
@@ -74,13 +76,14 @@ class ReviewList extends React.Component {
               >
                 &#8594;
               </button>
-            </nav>
+            </nav> */}
           </div>
         </div>
-        <div className="row justify-content-evenly row-cols-1 row-cols-md-2 row-cols-lg-4">
-          {currPageReviews.map((review, index) => {
+        {/* <div className="row justify-content-evenly row-cols-1 row-cols-md-2 row-cols-lg-4"> */}
+        <div className="hor-scroll">
+          {reviews.map((review, index) => {
             return (
-              <div className="col" key={index}>
+              <div className="review-card" key={index}>
                 <Review review={review} />
               </div>
             );
