@@ -25,7 +25,22 @@ body {
 .indicator .icon {
   height: 25px;
   width: 25px;
-  margin-right: 5px;
+  /* margin-right: 5px; */
+  margin:38%;
+}
+ .hor-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: end;
+  -webkit-overflow-scrolling: touch;
+}
+.hor-scroll::-webkit-scrollbar{
+  display:none;
+}
+ .hor-scroll .style-card {
+  flex: 0 0 auto;
+  margin: 20px;
 }
 .artist {
   box-shadow: 10px -10px 2px rgb(183, 41, 202),
@@ -49,17 +64,17 @@ body {
   border-radius: 15px;
   /* height: ; */
   /* width: 30%; */
-  max-width: 250px;
+  width: 250px;
   /* padding: 0px; */
   margin:25px;
+  /* margin-left: 0px; */
 }
-
 
 .artist-list .hor-scroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  justify-content: space-evenly;
+  justify-content: end;
   -webkit-overflow-scrolling: touch;
 }
 
