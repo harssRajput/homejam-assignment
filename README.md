@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Homejam assignment by using React
+
+## About
+
+displays various artists that user can bookmark and know more about them by `know more` button\
+also shows reviews about them.
+
+## Technologies used
+
+based on React js\
+designing done by Bootstrap and CSS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
